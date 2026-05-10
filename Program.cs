@@ -38,7 +38,7 @@ builder.Services.AddOpenApi();
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowFrontend", policy =>
-        policy.WithOrigins("http://localhost:3000","https://stockflow-client-snowy.vercel.app/")
+        policy.WithOrigins("http://localhost:3000","https://stockflow-client-snowy.vercel.app")
               .AllowAnyHeader()
               .AllowAnyMethod());
 });
